@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning Message</title>
+    <style>
+        body {
+            background-image: url('CATS.jpg');
+            background-size: cover;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Good Morning!</h1>
+    <p>Did you sleep nicely?</p>
+    <select>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <div id="message"></div>
+    <p>Thank you for being by my side, I really appreciate that. Right now, I am being a simp for you and behaving as that techno simping boy for you &gt;.&lt; I wanted to be by your side enjoying my morning coffee but maybe in future i can afford that luxory but for now i will just be that techno boy still simping for that girl who loves cats and nice coffee ,tbh it was almost 3 am since i completed this page after studying because i was missing you </p>
+
+    <script>
+        const select = document.querySelector('select');
+        const message = document.getElementById('message');
+
+        select.addEventListener('change', function() {
+            if (select.value === 'yes') {
+                message.textContent = 'Have a good day, Rumi!';
+            } else {
+                message.textContent = 'Don\'t worry, just call me if you need me.';
+            }
+        });
+    </script>
+</body>
+</html>
